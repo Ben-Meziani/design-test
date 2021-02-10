@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
   <title>Frontend Mentor | Interactive pricing component</title>
 
-
+  <script src="https://kit.fontawesome.com/d56a1e1246.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
   <div class="container text-center">
-  <h1>Simple, traffic-based pricing</h1>
- <p>Sign-up for our 30-day trial. No credit card required. </p> 
+    <h1>Simple, traffic-based pricing</h1>
+    <h5>Sign-up for our 40-day trial. No credit card required. </h5>
 
- <div class="card">
-   <div class="wrapper d-flex justify-content-center ">
-    <div class="pageview"><span id="value"></span>K PAGEVIEWS</div>
-    <div class="price">$16.00 /month</div>
-   </div>
-  <div class="slideContainer">
-    <input type="range" min="1" max="100" value="1" id="myRange" class="slider">
+    <div class="card w-75 mx-auto">
+      <div class="container d-flex justify-content-center justify-content-around mt-4">
+        <div class="pageview "><span id="value"></span>K PAGEVIEWS </div>
+        <div class="price"><strong style="font-size: 35px">$16.00</strong>  /month</div>
+      </div>
+      <div class="slideContainer">
+        <input type="range" min="1" max="100" value="1" id="myRange" class="slider">
+      </div>
+
+      <div class="container d-flex justify-content-center mt-2">
+        Monthly Billing <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+          <label class="custom-control-label" for="customSwitch1">Yearly Billing <span style="padding: 5px;border-radius: 12px;background-color:rgb(255,234,223); color:rgb(250,186,175)">25% discount</span> </label>
+      </div>
+    </div>
+      <div class="container d-flex justify-content-around mt-3">
+        <ul style="position:relative">
+          <li><i class="fas fa-check" style="color: green"> </i>Unlimited websites</li>
+          <li><i class="fas fa-check" style="color: green"></i>100% data ownership</li>
+          <li><i class="fas fa-check" style="color: green"></i>Email reports</li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <button type="submit" class="btn btn-primary btn-sm " style="width: 150px">Start my trial</button>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://mon-site-developpeur.com">Ben Meziani</a>.
+    </div>
   </div>
-  
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
- </div>
-
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
